@@ -1,0 +1,29 @@
+development: &default_settings
+
+  # Push Notification config
+  push_app_name: "themeltsuriengine"
+  push_connections: 2
+  push_enabled: true
+  push_payload_data: "Your VIP MELT account is active"
+  push_collapse_key: "MSG"
+  push_apns_certificate: "Certificates.pem"
+  push_apns_feedback_poll: 60
+  push_apns_sandbox: true
+  push_apns_badge: 1
+  push_apns_sound: "1.aiff"
+  push_gcm_key: "AIzaSyDQyUpe91Giz-PFXic0f01oPcp7GcWw3N0"
+
+test:
+  <<: *default_settings
+
+staging:
+  <<: *default_settings
+
+preview2:
+  <<: *default_settings
+
+preview3:
+  <<: *default_settings
+
+production:
+  <<: *default_settings
